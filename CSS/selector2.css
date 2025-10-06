@@ -1,0 +1,53 @@
+/* class sector */
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+/* id selector */
+#green{
+  color: green;
+}
+#yellow{
+  color: yellow;
+  background-color: red;
+}
+/* child selector */
+div>p{
+  color: blue;
+  background-color: green;
+}
+/* Desendent selector */
+div p{
+  color: orange;
+  background-color: black;
+}
+/* universal selctor */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* psuedo selector */
+a:visitd{
+  color: red;
+
+}
+a:link{
+  color: blueviolet;
+}
+a:active{
+  color: green;
+}
+a:hover{
+  color:yellow
+}
+li:first-child{
+  color: red;
+}
+li:nth-of-type(even){
+  background-color: yellow;
+}
+yes:checked{
+  color: blue;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+   
+    <style>
+        /* element selector */
+        /* div{
+            background-color: red;
+        } */
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div>p{
+            color: red;
+            background-color: yellow;
+        }
+        /* desendent selector */
+        div p{
+            color: red; background-color: black;
+        }
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: aquamarine;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            color: rgb(25, 0, 255);
+        }
+   
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="red">
+        hello i am div
+        <p>heloo i ma child of div</p>
+    </div>
+    <div id="green">
+        <article>
+             hello i am div2
+        </article>
+    </div>
+   <a href="https:/www.google.com">Go to google</a>
+   <a href="https:/www.facebook2.com">Go to facebook</a>
+   <main>
+    <p>this is first child</p>
+    <p>this is second child</p>
+   </main>
+   <div>
+    hello this is my parent
+   </div>
+    
+</body>
+</html>
