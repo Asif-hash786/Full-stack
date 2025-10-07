@@ -1,0 +1,42 @@
+div{
+  height: 100px;
+  width: 700px;
+  background-color: pink;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: black; */
+  border: 2px solid yellow;
+  border-left-color: black;
+  border-right-style: dashed;
+  margin: 20px;
+  /* margin-bottom: 25px;
+  margin-left: 20px; */
+}
+h1{
+  border: 4px;
+  border-style: dotted;
+  border-color: red;
+}
+h2{
+  width: 335px;
+  border-left: 4px solid black;
+  border-right: 4px dotted green;
+  border-bottom: 6px dotted red;
+  border-top: 4px dashed pink;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+button{
+  color: rgb(132, 74, 45);
+  height: 30px;
+  border: 2px solid rgb(237, 221, 221);
+  background: rgb(219, 206, 206);
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding: 10px; */
+  /* padding: 10px 10px; */
+  /* padding: 1px 2px 3px 4px; */
+
+}
