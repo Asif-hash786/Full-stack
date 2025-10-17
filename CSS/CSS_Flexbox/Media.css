@@ -1,0 +1,17 @@
+.one{
+  height: 40px;
+  width: 1200px;
+  background-color: pink;
+}
+@media(max-width: 400px){
+  .one{
+    background-color: green;
+    color: white;
+  }
+}
+@media(orientation: landscape){
+  .one{
+    background-color: yellow;
+    color: red;
+  }
+}

@@ -1,0 +1,77 @@
+.container{
+  height: 600px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(11,1fr);
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 10px;
+  
+}
+.container div{
+  border: 2px solid black;
+  background-color: pink;
+}
+.one{
+  grid-column: 1/13;
+}
+.two{
+  grid-row: 2/11;
+  grid-column: 1/4;
+}
+.three{
+  grid-column: 4/10;
+}
+.four{
+  grid-column: 10/13;
+  grid-row: 2/11;
+}
+.five{
+  grid-column: 4/10;
+  grid-row: 3/11;
+}
+.six{
+  grid-column: 1/13;
+}
+@media(max-width:720px){
+  .one{
+    grid-column: 1/ span 12;
+  }
+  .two{
+    grid-column: 1/ span 3;
+    grid-row:3/ span 9 ;
+  }
+  .three{
+    grid-column: 1/ span 12;
+    grid-row: 2;
+  }
+  .four{
+    grid-column: 1/ span 3;
+    grid-row: 12;
+  }
+  .five{
+    grid-column: 4/ span 9;
+    grid-row: 3 / span 9;
+  }
+  .six{
+    grid-column: 4/ span 9;
+    grid-row: 12;
+  }
+}
+.loader{
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid goldenrod;
+  border-radius: 50%; 
+  width: 120px; 
+  height: 120px; 
+  animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
