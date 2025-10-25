@@ -67,3 +67,4 @@
 // console.log(chars.sort());
 // let num=[5,8,9,6,1,2]; // it will only sort character and strings elements
 // console.log(num.sort());
+
