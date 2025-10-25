@@ -87,3 +87,14 @@
 
 // let random=Math.floor(Math.random()  * 100)+1;
 // console.log(random);
+
+// function concat(str){
+//   let result="";
+//   for(let i=0;i<str.length;i++){
+//     result+=str[i];
+//   }
+//   return result;
+// }
+// let str=["my","name","is","nobara"];
+// console.log(concat(str));
+
