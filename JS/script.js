@@ -68,3 +68,22 @@
 // let num=[5,8,9,6,1,2]; // it will only sort character and strings elements
 // console.log(num.sort());
 
+//OBJECTS
+
+// const post={
+//   username:"asif-01",
+//   content:"This is my #firstpost",
+//   likes:55,
+//   reposts:55,
+//   tags:["@mahesh","@india"]
+// };
+// console.log(post);
+// console.log(post.username);
+// console.log(post.likes=85);
+// console.log(post.gender="male");
+// console.log(delete post.content);
+
+//MATH
+
+// let random=Math.floor(Math.random()  * 100)+1;
+// console.log(random);
