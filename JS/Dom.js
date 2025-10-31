@@ -71,6 +71,29 @@
 // console.log(img.previousElementSibling.style.color="red");
 
 
+// Adding element on page
+// let box=document.querySelector('.box');
+// let newp=document.createElement("p");
+// newp.innerText="hi im new para";
+// console.log(box.appendChild(newp));
+// let btn=document.createElement("button");
+// btn.innerText="click me";
+// console.log(box.appendChild(btn));
 
+// same line ,,will add in end
 
+// console.log(newp.append(btn));
 
+// same line but will add in starting
+// console.log(newp.prepend("hello my name is steve "));
+
+// insert addacent ,, exactly where do we want to add the element
+
+// let p=document.querySelector('p');
+// console.log(p);
+// let bt=document.createElement("button");
+// bt.innerText="NEW BUTTON";
+// console.log(p.insertAdjacentElement('beforebegin',bt));
+// console.log(p.insertAdjacentElement('afterbegin',bt));
+// console.log(p.insertAdjacentElement('beforeend',bt));
+// console.log(p.insertAdjacentElement('afterend',bt));
