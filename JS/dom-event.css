@@ -7,3 +7,17 @@ div{
   border: 2px solid black;
   margin: auto;
 } */
+
+/* //Event bubbling */
+
+div{
+  height: 300px;
+  width: 400px;
+  background-color: pink;
+}
+ul{
+  background-color: blue;
+}
+li{
+  background-color: green;
+}

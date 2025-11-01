@@ -130,3 +130,25 @@
 //    const filteredValue = inp.value.replace(/[^a-zA-Z\s]/g, "");
 //       h2.innerText = filteredValue;
 // });
+
+// Event bubbling
+
+// let div=document.querySelector("div");
+// let ul=document.querySelector("ul");
+// let lis=document.querySelectorAll("li");
+
+// div.addEventListener("click",function(event){ // there ia a nested bubbling thats why its repeat to stop this we use stopPropagation();
+//   console.log("div was clicked");
+//   event.stopPropagation();
+// });
+// ul.addEventListener("click",function(event){
+//   console.log("ul was clicked");
+//   event.stopPropagation();
+// });
+
+// for(li of lis){
+//   li.addEventListener("click",function(event){
+//   console.log("li was clicked");
+//   event.stopPropagation();
+// });
+// }
