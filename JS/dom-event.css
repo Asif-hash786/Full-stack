@@ -10,7 +10,7 @@ div{
 
 /* //Event bubbling */
 
-div{
+/* div{
   height: 300px;
   width: 400px;
   background-color: pink;
@@ -20,4 +20,4 @@ ul{
 }
 li{
   background-color: green;
-}
+} */
