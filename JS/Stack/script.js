@@ -210,7 +210,7 @@
 //  .then(()=>{
 //   console.log("green color was completed");
 //  });
- 
+
 
 // changeColor("red", "1000", () => {
 //   changeColor("blue", 1000, () => {
@@ -221,3 +221,94 @@
 //     });
 //   });
 // });
+
+
+// Async Function
+
+// async function greet() {
+//   throw "week connection";  // throw --> throw error
+//   return "hello!!";
+// }
+// greet()
+//   .then((result) => {
+//     console.log("promise was resolved");
+//     console.log("result was : ", result);
+//   })
+//   .catch((err) => {
+//     console.log("promise was rejected with error: ", err);
+//   });
+
+// we can also use this
+
+// let hello=async()=>{
+//   return 5;
+// };
+
+// await keyword
+
+// function getNum() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let num = Math.floor(Math.random() * 10) + 1;
+//       console.log(num);
+//       resolve();
+//     },1000);
+//   });
+// }
+
+// async function greet() {
+//   await getNum();  // await --> wait for 1 second
+//   await getNum();
+//   await getNum();
+// }
+
+// let h1=document.querySelector("h1");
+
+// function changeColor(color, delay) {
+//   return new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//       h1.style.color = color;
+//       resolve("color changed");
+//     }, delay);
+//   });
+// }
+
+// async function color(){
+//   await changeColor("red",1000);
+//   await changeColor("blue",1000);
+//   await changeColor("green",1000);
+//   changeColor("yellow",1000);
+// }
+
+// Handling rejection
+
+// let h1 = document.querySelector("h1");
+
+// function changeColor(color, delay) {
+//   return new Promise((resolve, reject) => {
+//     let num = Math.floor(Math.random() * 5) + 1;
+//     if (num > 3) {
+//       reject("promise rejected");
+//     }
+//     setTimeout(() => {
+//       h1.style.color = color;
+//       console.log(`color changes to ${color}!`);
+//       resolve("color changed");
+//     }, delay);
+//   });
+// }
+
+// async function color() {
+//   try{
+//     await changeColor("red", 1000);
+//     await changeColor("blue", 1000);
+//     await changeColor("green", 1000);
+//     await changeColor("yellow", 1000);
+//   } catch(err){
+//     console.log("error caught");
+//     console.log(err);
+//   }
+//   let a=5;
+//   console.log(a);
+//   console.log("new numer =",a+2);   
+// }
