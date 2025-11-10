@@ -2,7 +2,10 @@
 import './App.css'
 // import LikeButton from './LikeButton';
 // import LudoBoard from './LudoBoard';
-import TodoList from './TodoList';
+// import TodoList from './TodoList';
+import Lottery from './Lottery';
+// import TicketNum from './TicketNum';
+// import Ticket from './Ticket';
 function App() {
   return(
     <>
@@ -10,7 +13,10 @@ function App() {
     {/* <Counter/> */}
     {/* <LikeButton/> */}
     {/* <LudoBoard/> */}
-    <TodoList/>
+    {/* <TodoList/> */}
+    {/* <Lottery/> */}
+    {/* <Ticket ticket={[0,1,2]}/> */}
+    <Lottery n={3} winningSum={15}/>
     </>
   );
 }
