@@ -1,0 +1,11 @@
+.InfoBox{
+  text-align: center;
+}
+.InfoBox h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
