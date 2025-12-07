@@ -1,0 +1,24 @@
+<%- include("includes/head.ejs"); %>
+<body>
+  <h2>This place belong to <b> @<%= data.name %> </b>
+  </h2>
+  <button>Follow</button>
+  <button>Message</button>
+  <!-- <h3>Accounts that Follow you :</h3> -->
+
+  <p>Followers : <%= data.followers %> &nbsp;&nbsp;
+      Following : <%= data.following %>
+  </p>
+  <hr>
+  <h3>Posts</h3>
+  <% for(let post of data.posts){ %>
+    <img src="<%= post.images %>" alt="some img">
+    <p>Likes : <%= post.likes %> &nbsp;&nbsp;
+        Comments : <%= post.comments %>
+    </p>
+    <% } %>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+
+</html>
