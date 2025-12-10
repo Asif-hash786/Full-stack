@@ -7,7 +7,7 @@ const port = 8080;
 app.set("View engine", "ejs");
 
 app.set("views", path.join(__dirname, "/views"));
-app.use(express.static(path.join(__dirname, "style")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.render("home.ejs");
