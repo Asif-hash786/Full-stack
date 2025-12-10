@@ -118,3 +118,5 @@ class Cat extends Mammel{ //child
     console.log("meow...");
   }
 }
+p1=new Dog("tuffy");
+console.log(p1);
