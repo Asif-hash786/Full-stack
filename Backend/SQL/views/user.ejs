@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <h1>User Data</h1>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Edit</th>
+    </tr>
+    <% for(let count of count2){ %>
+      <tr>
+        <td>
+          <%= count.id %>
+        </td>
+        <td>
+          <%= count.username %>
+        </td>
+        <td>
+          <%= count.email %>
+        </td>
+        <td>
+          <form action="/user/<%=count.id%>/edit" method="get">
+            <button>Edit Username</button>
+          </form>
+        </td>
+      </tr>
+      <% } %>
+  </table>
+</body>
+
+</html>
