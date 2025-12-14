@@ -43,11 +43,33 @@ const User = mongoose.model("User", userSchema);
 // });
 
 // find
+// find -> findOne -> findById
 
-User.findOne({age:{$gte:40}})
-.then((res)=>{
-  console.log(res);
-})
-.catch((err)=>{
-  console.log(err);
-});
+
+// User.findById("693e93d08031b2a5f7f7f59f")
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// });
+
+// update->updateOne->updateMany
+
+// User.findByIdAndUpdate("693e93d08031b2a5f7f7f59d",
+//   { age: 20, name: "Asif", email: "asif@gmail.com" }, { new: true })
+//   .then((res) => {
+//     console.log(res);
+//   }).catch((err) => {
+//     console.log(err);
+//   });
+
+// Delete--->deleteOne-->deleteMany-->findByIdAndDelete-->
+
+// User.findOneAndDelete( {name:"evason"})
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
