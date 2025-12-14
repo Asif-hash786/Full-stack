@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Whatsapp</title>
+  <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h3>All Chats!!</h3>
+  <form action="/chats/new" method="GET">
+    <button class="top">New chat</button>
+  </form>
+  <% for(let chat of chats){ %>
+    <div class="box1">
+      <p class="from">From : <%= chat.from %>
+      </p>
+      <div class="message">
+        <p class="msg">Message : <%= chat.msg %>
+      </p>
+      <form action="/chats<%= chat._id %>/edit" method="GET">
+        <button class="bottom">Edit</button>
+      </form>
+      </div>
+      <p>Recived by : <%= chat.to %>
+      </p>
+      <hr>
+      <div class="footer">
+        <p>
+          <%=chat.created_at.toString().split(" ")[4] %></p>
+      <p><%=chat.created_at.toString().split(" ").slice(0,4).join(" -") %>
+        </p>
+      </div>
+    </div>
+    <% } %>
+</body>
+
+</html>
