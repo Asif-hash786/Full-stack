@@ -24,17 +24,21 @@
       </p>
       <div class="message">
         <p class="msg">Message : <%= chat.msg %>
-      </p>
-      <form action="/chats<%= chat._id %>/edit" method="GET">
-        <button class="bottom">Edit</button>
-      </form>
+        </p>
+        <div class="form">
+          <form action="/chats/<%= chat._id %>/edit" method="GET">
+            <button class="bottom">Edit</button>
+          </form>
+          <form action="/chats/<%= chat._id %>?_method=DELETE" method="POST">
+            <button class="bottom">Delete</button>
+          </form>
+        </div>
       </div>
       <p>Recived by : <%= chat.to %>
       </p>
-      <hr>
+      <!-- <hr> -->
       <div class="footer">
-        <p>
-          <%=chat.created_at.toString().split(" ")[4] %></p>
+        <p class="chat1"><%=chat.created_at.toString().split(" ")[4] %></p>
       <p><%=chat.created_at.toString().split(" ").slice(0,4).join(" -") %>
         </p>
       </div>

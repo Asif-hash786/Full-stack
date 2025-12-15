@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(241, 229, 196);
+  background-color: #ECFEFF;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -10,14 +10,15 @@ h3{
   color: green;
 }
 .box1{
-  background-color: rgb(235, 181, 65);
+  background-color: #67E8F9;
   border-radius: 0.8rem;
   width: 30rem;
-  height: 12.5rem;
-  line-height: 0.8rem;
+  height: 12.auto;
+  line-height: 0.1rem;
 }
 .msg{
   margin-left: 0.8rem;
+  line-height: 1.5rem;
 }
 p{
   margin-left: 0.8rem;
@@ -37,8 +38,14 @@ p{
   transform: scale(1.02);
 }
 .footer{
+  padding-bottom: 0.2rem;
+  background-color: #22D3EE;
   line-height: 0.5rem;
-  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
+}
+.chat1{
+  padding-top: 0.5rem;
 }
 .from{
   padding-top: 1rem;
@@ -61,4 +68,7 @@ p{
   background-color: rgb(69, 1, 1);
   cursor: pointer;
   transform: scale(1.02);
+}
+.form{
+  display: flex;
 }

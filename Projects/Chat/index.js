@@ -29,12 +29,16 @@ app.get("/", (req, res) => {
 
 app.get("/chats", async (req, res) => {
   let chats = await Chat.find();
-  console.log(chats);
+  // console.log(chats);
   res.render("index.ejs", { chats });
 });
+
 app.get("/chats/new", (req, res) => {
   res.render("new.ejs");
 });
+
+// chats Routes
+
 app.post("/chats", (req, res) => {
   let { from, to, msg } = req.body;
   let newChat = new Chat({
@@ -55,11 +59,34 @@ app.post("/chats", (req, res) => {
 
 // Edit Route
 
-app.get("/chats/:id/edit",(req,res)=>{
-  res.render("edit.ejs");
+app.get("/chats/:id/edit", async (req, res) => {
+  let { id } = req.params;
+  let chat = await Chat.findById(id);
+  res.render("edit.ejs", { chat });
 });
+
+// update route
+
+app.put("/chats/:id", async (req, res) => {
+  let { id } = req.params;
+  let { msg: newMsg } = req.body;
+  let updatedChat = await Chat.findByIdAndUpdate(id, { msg: newMsg }, { runValidators: true, new: true });
+  console.log(updatedChat);
+  res.redirect("/chats");
+});
+
+// Destroy Routes
+
+app.delete("/chats/:id", async (req, res) => {
+  let { id } = req.params;
+  let deletedChat = await Chat.findByIdAndDelete(id);
+  console.log(deletedChat);
+  res.redirect("/chats");
+});
+
+// Main Routes
 
 const port = 8080;
 app.listen(port, () => {
-  console.log("app is listining on port 8080");
+  console.log("App is listining on port 8080");
 });
